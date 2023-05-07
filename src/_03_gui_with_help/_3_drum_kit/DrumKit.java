@@ -6,8 +6,10 @@ import java.net.URL;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 import game_tools.Sound;
 
@@ -17,28 +19,33 @@ public class DrumKit implements MouseListener {
 
     public void run() {
         //  Make a JFrame variable and initialize it using "new JFrame()"
-
+JFrame goo =new JFrame();
         //  Make the frame visible and
+goo.setVisible(true);
         // set its default close operation to JFrame.EXIT_ON_CLOSE
-
+goo.setDefaultCloseOperation(1);
         //  Set the title of the frame
-
+goo.setTitle("I am going to pee yourself");
         //  Make a JPanel variable and initialize it using "new JPanel().
-
+JPanel boo =new JPanel();
         //  Add the panel to the frame. (The panel is invisible.)
-
+goo.add(boo);
         //  Use the image of a drum provided ("snare.jpg") or
+String foo =("snare.jpg");
         //  download an image of a drum from the Internet and drop it into the
+
         //  Drum Kit recipe package.
 
         //  Put the name of the drum image file in a String variable.
 
         //  Edit the next line to use your String variable
-        // drumLabel = createLabelImage(drumImageString);
+
+         JLabel loo = createLabelImage(foo);
 
         //  Add the label to the panel
-
+boo.add(loo);
         //  Call the pack() method on the frame.
+goo.pack();
         // Run your program. Do you see your drum image?
 
         // Add this MouseListener to drumLabel
@@ -48,7 +55,9 @@ public class DrumKit implements MouseListener {
         //  Set the layout of the panel to "new GridLayout()"
 
         //  Add a cymbal image to make a Drum Kit (one has been provided).
+
         //  You will need a different sound to go with this image.
+
         //  Remember to add this MouseListener to it. Run the program.
 
     }
